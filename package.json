@@ -1,0 +1,27 @@
+{
+  "name": "namaste-food-app",
+  "version": "1.0.0",
+  "description": "This is a small React based food ordering application ",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syed-Mohd-Azam/Food-Ordering-Application--React.git"
+  },
+  "keywords": [
+    "React",
+    "FrontEnd",
+    "JavaScript"
+  ],
+  "author": "Syed Mohd Azam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syed-Mohd-Azam/Food-Ordering-Application--React/issues"
+  },
+  "homepage": "https://github.com/Syed-Mohd-Azam/Food-Ordering-Application--React#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
