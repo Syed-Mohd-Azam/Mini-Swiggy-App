@@ -10,12 +10,21 @@ const heading = React.createElement(
 console.log(heading);
 
 // JSX --> JSX is a HTML like Syntax --> It is transpiled before it reaches to JavaScript Engine by Babel --> It converts into React.createElement() --> It converts into object.
-const jsxHeading = (
-  <h1 id="heading" className="head">
-    Namaste React using JSX 🚀
-  </h1>
-);
+const jsxHeading = <h1 className="head">Namaste React using JSX 🚀</h1>;
 console.log(jsxHeading);
 
+// React Component
+
+// Class Based Components
+// Functional Based Components
+
+const HeadingComponentOne = () => {
+  return <h1>Namaste React Functional Component One</h1>;
+};
+const HeadingComponentTwo = () => (
+  <h1>Namaste React Functional Component Two </h1>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+// root.render(jsxHeading);
+// root.render(<HeadingComponentOne />);
+root.render(<HeadingComponentTwo />);
