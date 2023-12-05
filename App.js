@@ -1,19 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "First Heading Tag!"),
-    React.createElement("h1", {}, "Second Heading Tag!"),
-  ])
-);
+
+// React Element --> Object --> Renders element on the DOM, it becomes an HTML Element.
+
 const heading = React.createElement(
   "h1",
-  { id: "heading", className: "head" },
-  "Hello World from React!"
+  { id: "heading" },
+  "Namaste React 🚀"
 );
-console.log(heading);
-console.log(parent);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(heading);
