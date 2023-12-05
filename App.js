@@ -18,13 +18,17 @@ console.log(jsxHeading);
 // Class Based Components
 // Functional Based Components
 
-const HeadingComponentOne = () => {
-  return <h1>Namaste React Functional Component One</h1>;
+const Title = () => {
+  return <h1>Namaste React Title Component🚀</h1>;
 };
-const HeadingComponentTwo = () => (
-  <h1>Namaste React Functional Component Two </h1>
+const FunctionalComponent = () => (
+  <>
+    {/* Component Composition */}
+    <Title />
+    <h1>Namaste React Functional Component Two🚀 </h1>
+  </>
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(jsxHeading);
 // root.render(<HeadingComponentOne />);
-root.render(<HeadingComponentTwo />);
+root.render(<FunctionalComponent />);
