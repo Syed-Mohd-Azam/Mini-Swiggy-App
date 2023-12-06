@@ -1,3 +1,32 @@
 #heading {
   color: red;
 }
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.logo {
+  min-width: 150px;
+  min-height: 150px;
+  width: 150px;
+  height: 150px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-right: 2rem;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-items ul li {
+  padding: 1.5rem;
+  font-size: 2rem;
+}
