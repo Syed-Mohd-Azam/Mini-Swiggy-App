@@ -23,10 +23,42 @@ const Header = () => {
     </>
   );
 };
+const RestaurantCard = () => {
+  return (
+    <>
+      <section className="res-card">
+        <img
+          className="res-logo"
+          src="https://cdn.squaremeal.co.uk/article/9779/images/diy-restaurant-meal-kits-bubala_10052023015403.jpg?w=913&auto=format%2Ccompress"
+          alt="Restaurant Logo"
+        />
+        <section className="res-info">
+          <h1 className="info res-name">Meghna Foods</h1>
+          <h5 className="info">Biryani, North Indian, Asian</h5>
+          <h5 className="info">4.4. stars</h5>
+          <h5 className="info">38 mins</h5>
+        </section>
+      </section>
+    </>
+  );
+};
+const Body = () => {
+  return (
+    <>
+      <section className="body">
+        <div className="search">Search</div>
+        <div className="res-container">
+          <RestaurantCard />
+        </div>
+      </section>
+    </>
+  );
+};
 const AppLayout = () => {
   return (
     <>
       <Header />
+      <Body />
     </>
   );
 };

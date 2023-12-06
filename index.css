@@ -30,3 +30,42 @@
   padding: 1.5rem;
   font-size: 2rem;
 }
+.res-card {
+  width: 200px;
+  background-color: #f0f0f0;
+  height: 280px;
+  border-radius: 10px;
+}
+.res-card:hover {
+  cursor: pointer;
+}
+.res-logo {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+}
+.body {
+  padding: 10px;
+}
+.search {
+  padding: 1.5rem;
+}
+.res-container {
+  padding: 1.5rem;
+}
+
+.res-info {
+  padding: 8px;
+}
+.info {
+  padding: 5px 0px;
+  font-size: medium;
+  color: gray;
+}
+.res-name {
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  color: brown;
+  font-size: 1.2rem;
+  font-style: italic;
+}
