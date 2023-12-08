@@ -14,7 +14,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
   padding-right: 2rem;
 }
 .nav-items {
@@ -75,4 +74,15 @@
   color: brown;
   font-size: 1.2rem;
   font-style: italic;
+}
+.filter {
+  padding: 0rem 1.5rem;
+}
+.top-rated-restaurants {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #4681f4;
+  color: white;
 }

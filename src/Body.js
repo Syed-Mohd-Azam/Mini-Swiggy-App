@@ -3,7 +3,11 @@ const Body = () => {
   return (
     <>
       <section className="body">
-        <div className="search">Search</div>
+        <div className="filter">
+          <button className="top-rated-restaurants">
+            Top Rated Restaurants
+          </button>
+        </div>
         <div className="res-container">
           <RestaurantCard
             name="Meghna Foods"
