@@ -25,8 +25,10 @@ const Body = () => {
     const json = await response.json();
     console.log(json);
     setListOfRestaurants(
-      json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
+      (json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants).filter(
+        (restaurant) =>
+          restaurant?.info?.name.toLowerCase().includes(search.toLowerCase())
+      )
     );
     setFilteredRestaurants(
       json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
