@@ -79,12 +79,16 @@
   padding: 0rem 1.5rem;
 }
 .top-rated-restaurants {
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1rem;
   border-radius: 8px;
   border: none;
-  background-color: brown;
-  color: white;
+  background-color: #f0f0f0;
+  color: black;
+  letter-spacing: 1px;
+}
+.top-rated-restaurants:hover {
+  cursor: pointer;
 }
 .shimmer {
   padding: 1.5rem;
@@ -93,4 +97,43 @@
   flex-wrap: wrap;
   row-gap: 2rem;
   column-gap: 2rem;
+}
+.login-logout {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: yellow;
+  color: black;
+  font-size: 1.7rem;
+}
+.search {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.search-input {
+  padding: 0.8rem;
+  border-radius: 7px;
+  border: none;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: black;
+  letter-spacing: 1px;
+  border: 1px solid black;
+}
+.search-button {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.search-button:hover {
+  cursor: pointer;
+}
+.filter {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  align-items: center;
 }
