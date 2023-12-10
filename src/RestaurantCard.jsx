@@ -1,17 +1,30 @@
-const RestaurantCard = ({ name, cuisines, stars, minutes }) => {
+const RestaurantCard = ({
+  restaurant: {
+    info: {
+      name,
+      cloudinaryImageId,
+      cuisines,
+      avgRating,
+      sla: { deliveryTime },
+    },
+  },
+}) => {
   return (
     <>
       <section className="res-card">
         <img
           className="res-logo"
-          src="https://cdn.squaremeal.co.uk/article/9779/images/diy-restaurant-meal-kits-bubala_10052023015403.jpg?w=913&auto=format%2Ccompress"
+          src={
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+            cloudinaryImageId
+          }
           alt="Restaurant Logo"
         />
         <section className="res-info">
           <h1 className="info res-name">{name}</h1>
-          <h5 className="info">{cuisines}</h5>
-          <h5 className="info">{stars}</h5>
-          <h5 className="info">{minutes}</h5>
+          <h5 className="info">{`${cuisines.slice(0, 2).join(", ")}, ...`}</h5>
+          <h5 className="info">{avgRating} stars</h5>
+          <h5 className="info">{deliveryTime} minutes</h5>
         </section>
       </section>
     </>

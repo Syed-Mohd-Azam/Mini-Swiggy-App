@@ -1,74 +1,39 @@
 import RestaurantCard from "./RestaurantCard";
+import { useState, useEffect } from "react";
 const Body = () => {
+  // State Variable --> Super Powerful Variable
+  // useState() is a hook which is used to declare a state variable.
+  // State variable is a variable which stores the value or you can say a state of a component and as sson as its value is changed component is re-rendered.
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  useEffect(() => {
+    fetchData();
+  }, []);
+  const fetchData = async () => {
+    const response = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await response.json();
+    console.log(json);
+    setListOfRestaurants(
+      json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+  };
   return (
     <>
       <section className="body">
         <div className="filter">
-          <button className="top-rated-restaurants">
+          <button className="top-rated-restaurants" onClick={() => {}}>
             Top Rated Restaurants
           </button>
         </div>
         <div className="res-container">
-          <RestaurantCard
-            name="Meghna Foods"
-            cuisines="Burger, Pizza, Fries"
-            stars="4.3 stars"
-            minutes="38 minutes"
-          />
-          <RestaurantCard
-            name="KFC"
-            cuisines="Chicken Fries, Chicken Wings, Cold Drink"
-            stars="4.2 stars"
-            minutes="29 minutes"
-          />
-          <RestaurantCard
-            name="Sindh Sweets"
-            cuisines="Snacks, Sweets, Bakery"
-            stars="4.1 stars"
-            minutes="17 minutes"
-          />
-          <RestaurantCard
-            name="VIP Pizza Delhi"
-            cuisines="Italian, Pizzas"
-            stars="4.1 stars"
-            minutes="25 minutes"
-          />
-          <RestaurantCard
-            name="Milkbar Delight"
-            cuisines="South Indian, Chinese, Pizza, Cakes, FastFood"
-            stars="4 stars"
-            minutes="24 minutes"
-          />
-          <RestaurantCard
-            name="Kwality's Snack Shoppe"
-            cuisines="North Indian, Mughlai"
-            stars="4.1 stars"
-            minutes="21 minutes"
-          />
-          <RestaurantCard
-            name="Pie Pizza"
-            cuisines="Pizzas, Burgers"
-            stars="3.4 stars"
-            minutes="24 minutes"
-          />
-          <RestaurantCard
-            name="Pizza Hut"
-            cuisines="Pizzas,snacks"
-            stars="3.7 stars"
-            minutes="29 minutes"
-          />
-          <RestaurantCard
-            name="Hot Wok"
-            cuisines="Chinese"
-            stars="3.7 stars"
-            minutes="24 minutes"
-          />
-          <RestaurantCard
-            name="Jassi's Bread and Bytes"
-            cuisines="Bakery, Fast Foods, Desserts"
-            stars="4 stars"
-            minutes="15 minutes"
-          />
+          {listOfRestaurants.map((restaurant) => (
+            <RestaurantCard
+              key={restaurant?.info?.id}
+              restaurant={restaurant}
+            />
+          ))}
         </div>
       </section>
     </>
