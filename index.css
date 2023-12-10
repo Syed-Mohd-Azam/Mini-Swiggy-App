@@ -86,3 +86,11 @@
   background-color: brown;
   color: white;
 }
+.shimmer {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}

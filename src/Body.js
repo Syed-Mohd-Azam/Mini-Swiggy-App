@@ -1,5 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 const Body = () => {
   // State Variable --> Super Powerful Variable
   // useState() is a hook which is used to declare a state variable.
@@ -21,21 +22,25 @@ const Body = () => {
   };
   return (
     <>
-      <section className="body">
-        <div className="filter">
-          <button className="top-rated-restaurants" onClick={() => {}}>
-            Top Rated Restaurants
-          </button>
-        </div>
-        <div className="res-container">
-          {listOfRestaurants.map((restaurant) => (
-            <RestaurantCard
-              key={restaurant?.info?.id}
-              restaurant={restaurant}
-            />
-          ))}
-        </div>
-      </section>
+      {listOfRestaurants.length > 0 ? (
+        <section className="body">
+          <div className="filter">
+            <button className="top-rated-restaurants" onClick={() => {}}>
+              Top Rated Restaurants
+            </button>
+          </div>
+          <div className="res-container">
+            {listOfRestaurants.map((restaurant) => (
+              <RestaurantCard
+                key={restaurant?.info?.id}
+                restaurant={restaurant}
+              />
+            ))}
+          </div>
+        </section>
+      ) : (
+        <Shimmer />
+      )}
     </>
   );
 };
