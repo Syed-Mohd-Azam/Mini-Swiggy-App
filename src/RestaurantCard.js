@@ -1,3 +1,4 @@
+import { SWIGGY_IMAGE_CLOUDINARY } from "./constants/constants";
 const RestaurantCard = ({
   restaurant: {
     info: {
@@ -14,10 +15,7 @@ const RestaurantCard = ({
       <section className="res-card">
         <img
           className="res-logo"
-          src={
-            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-            cloudinaryImageId
-          }
+          src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
           alt="Restaurant Logo"
         />
         <section className="res-info">

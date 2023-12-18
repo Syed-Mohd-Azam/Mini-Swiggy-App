@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { SWIGGY_API } from "./constants/constants";
 const Body = () => {
   const [search, setSearch] = useState("");
   // State Variable --> Super Powerful Variable
@@ -19,16 +20,12 @@ const Body = () => {
     );
   }, [search]);
   const fetchData = async () => {
-    const response = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    const response = await fetch(SWIGGY_API);
     const json = await response.json();
     console.log(json);
     setListOfRestaurants(
-      (json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants).filter(
-        (restaurant) =>
-          restaurant?.info?.name.toLowerCase().includes(search.toLowerCase())
-      )
+      json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
     );
     setFilteredRestaurants(
       json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
