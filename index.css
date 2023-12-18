@@ -102,9 +102,14 @@
   padding: 0.4rem 1rem;
   border-radius: 8px;
   border: none;
-  background-color: yellow;
-  color: black;
+  background-color: blue;
+  color: white;
   font-size: 1.7rem;
+}
+.login-logout:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: brown;
 }
 .search {
   display: flex;
@@ -136,4 +141,11 @@
   justify-content: flex-start;
   gap: 1.5rem;
   align-items: center;
+}
+.link {
+  text-decoration: none;
+  color: brown;
+}
+.link:hover {
+  color: blue;
 }
