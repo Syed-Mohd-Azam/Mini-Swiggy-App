@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import Header from "./src/Header";
 import Body from "./src/Body";
 import About from "./src/About";
-import { createBrowserRouter } from "react-router-dom";
+import Contact from "./src/Contact";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const AppLayout = () => {
   return (
     <>
@@ -29,4 +30,4 @@ const router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={router} />);
