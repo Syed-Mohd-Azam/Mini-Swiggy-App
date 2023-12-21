@@ -20,20 +20,20 @@ const RestaurantMenu = () => {
   const { name, avgRating, city, cuisines, costForTwoMessage } =
     resInfo?.data?.cards?.[0]?.card?.card?.info;
   const { itemCards } =
-    resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[1]
+    resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]
       ?.card?.card;
   console.log(itemCards);
   return (
     <>
       <main className="menu">
-        <h2>
-          {name},{city}
+        <h2 style={{ marginBottom: "1rem" }}>
+          {name}, {city}
         </h2>
-        <h3>
+        <h3 style={{ marginBottom: "1rem" }}>
           {cuisines.join(", ")}--{costForTwoMessage}
         </h3>
-        <h3>{avgRating} stars</h3>
-        <h2>Menu</h2>
+        <h3 style={{ marginBottom: "1rem" }}>{avgRating} stars</h3>
+        <h2 style={{ marginBottom: "1rem" }}>Menu</h2>
         <ul>
           {itemCards ? (
             itemCards?.map(

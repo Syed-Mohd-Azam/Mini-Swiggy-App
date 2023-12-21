@@ -149,3 +149,10 @@
 .link:hover {
   color: blue;
 }
+.menu {
+  padding: 0rem 2rem;
+  color: brown;
+}
+.menu ul {
+  list-style-type: square;
+}
