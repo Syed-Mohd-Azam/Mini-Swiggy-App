@@ -15,14 +15,17 @@ const RestaurantMenu = () => {
     setResInfo(jsonData);
   };
   if (resInfo === null) {
-    return <Shimmer />;
+    return (
+      <h1 style={{ color: "brown", padding: "1.5rem" }}>
+        Please Wait!! Data is Loading .....
+      </h1>
+    );
   }
   const { name, avgRating, city, cuisines, costForTwoMessage } =
     resInfo?.data?.cards?.[0]?.card?.card?.info;
   const { itemCards } =
     resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]
       ?.card?.card;
-  console.log(itemCards);
   return (
     <>
       <main className="menu">
