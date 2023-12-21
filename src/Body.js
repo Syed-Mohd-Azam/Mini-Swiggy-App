@@ -23,7 +23,6 @@ const Body = () => {
   const fetchData = async () => {
     const response = await fetch(SWIGGY_API);
     const json = await response.json();
-    console.log(json);
     setListOfRestaurants(
       json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
@@ -71,6 +70,7 @@ const Body = () => {
           <div className="res-container">
             {filteredRestaurants.map((restaurant) => (
               <Link
+                className="link"
                 to={"restaurant-menu/" + restaurant?.info?.id}
                 key={restaurant?.info?.id}
               >
