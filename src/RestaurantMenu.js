@@ -35,16 +35,20 @@ const RestaurantMenu = () => {
         <h3>{avgRating} stars</h3>
         <h2>Menu</h2>
         <ul>
-          {itemCards.map(
-            ({
-              card: {
-                info: { name, price },
-              },
-            }) => (
-              <li>
-                {name} || Rs.{price / 100}
-              </li>
+          {itemCards ? (
+            itemCards?.map(
+              ({
+                card: {
+                  info: { name, price },
+                },
+              }) => (
+                <li>
+                  {name} || Rs.{price / 100}
+                </li>
+              )
             )
+          ) : (
+            <p>No Items in the menu</p>
           )}
         </ul>
       </main>
