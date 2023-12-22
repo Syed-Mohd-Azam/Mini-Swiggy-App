@@ -1,3 +1,4 @@
+// Created a custom hook to promote single responsibility.
 import { useEffect, useState } from "react";
 import { MENU_API } from "../constants/constants";
 const useMenu = (resId) => {
