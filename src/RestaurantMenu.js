@@ -1,18 +1,8 @@
-import { useEffect, useState } from "react";
-import { MENU_API } from "./constants/constants";
 import { useParams } from "react-router-dom";
+import useMenu from "./custom-hooks/useMenu";
 const RestaurantMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
   const { resid } = useParams();
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-  const fetchMenu = async () => {
-    const response = await fetch(MENU_API + resid);
-    const jsonData = await response.json();
-    console.log(jsonData);
-    setResInfo(jsonData);
-  };
+  const resInfo = useMenu(resid);
   if (resInfo === null) {
     return (
       <h1 style={{ color: "brown", padding: "1.5rem" }}>
