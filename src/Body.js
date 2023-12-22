@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { SWIGGY_API } from "./constants/constants";
+import useOnlineStatus from "./custom-hooks/useOnlineStatus";
 const Body = () => {
+  const onlineStatus = useOnlineStatus();
   const [search, setSearch] = useState("");
   // State Variable --> Super Powerful Variable
   // useState() is a hook which is used to declare a state variable.
@@ -32,6 +34,13 @@ const Body = () => {
         ?.restaurants
     );
   };
+  if (onlineStatus === "offline") {
+    return (
+      <h1 style={{ padding: "1rem", color: "brown" }}>
+        Please check your Internet Connection!!
+      </h1>
+    );
+  }
   return (
     <>
       {listOfRestaurants.length > 0 ? (
