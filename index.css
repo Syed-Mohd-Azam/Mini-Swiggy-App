@@ -1,4 +1,7 @@
-#heading {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* #heading {
   color: red;
 }
 * {
@@ -157,4 +160,4 @@
 }
 .menu ul {
   list-style-type: square;
-}
+} */
