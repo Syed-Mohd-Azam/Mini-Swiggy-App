@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="text-2xl  hover:bg-yellow-300 hover:text-3xl bg-blue-500 text-white px-3  tracking-wide rounded-md pb-0.5"
+                className="text-2xl  hover:bg-blue-500 hover:text-3xl hover:text-white bg-zinc-50 text-black px-3  tracking-wide rounded-md pb-0.5"
                 onClick={() =>
                   setButton(button === "Login" ? "Logout" : "Login")
                 }

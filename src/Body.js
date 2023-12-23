@@ -44,27 +44,25 @@ const Body = () => {
   return (
     <>
       {listOfRestaurants.length > 0 ? (
-        <section className="body">
-          <div className="filter">
-            <div className="search">
+        <section>
+          <div className="flex gap-x-8 px-14 py-4 ">
+            <div className="flex gap-x-3">
               <input
-                className="search-input"
+                className="outline-2 outline-offset-1 outline-blue-500 px-2 border-blue-500 border-2 rounded-md"
                 type="search"
                 placeholder="Search Restaurant"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <div>
-                <button
-                  className="search-button"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Search
-                </button>
-              </div>
+              <button
+                className="bg-slate-400 rounded-md text-white font-bold py-2 px-2 cursor-pointer "
+                onClick={(e) => e.preventDefault()}
+              >
+                Search
+              </button>
             </div>
             <button
-              className="top-rated-restaurants"
+              className="bg-cyan-950 text-white rounded-md p-2 font-bold cursor-pointer "
               onClick={() => {
                 setFilteredRestaurants(
                   listOfRestaurants.filter(
