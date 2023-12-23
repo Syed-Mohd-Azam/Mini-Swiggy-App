@@ -12,9 +12,9 @@ const RestaurantCard = ({
 }) => {
   return (
     <>
-      <section className="w-60 h-64 rounded-t-2xl">
+      <section className="w-60 h-64 rounded-t-2xl hover:scale-90 ">
         <img
-          className="w-full h-1/2 rounded-t-2xl"
+          className="w-full h-1/2 rounded-t-2xl hover:skew-y-6"
           src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
           alt="Restaurant Logo"
         />
