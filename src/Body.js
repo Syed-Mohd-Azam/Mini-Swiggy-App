@@ -62,7 +62,7 @@ const Body = () => {
               </button>
             </div>
             <button
-              className="bg-cyan-950 text-white rounded-md p-2 font-bold cursor-pointer "
+              className="bg-cyan-950 text-white rounded-md p-2 font-bold cursor-pointer hover:text-cyan-950 hover:bg-white hover:border-cyan-950 hover:border-2"
               onClick={() => {
                 setFilteredRestaurants(
                   listOfRestaurants.filter(
@@ -74,7 +74,7 @@ const Body = () => {
               Top Rated Restaurants
             </button>
           </div>
-          <div className="flex flex-wrap gap-4 px-5 justify-center">
+          <div className="flex flex-wrap gap-4 px-10 ">
             {filteredRestaurants.map((restaurant) => (
               <Link
                 className="link"
