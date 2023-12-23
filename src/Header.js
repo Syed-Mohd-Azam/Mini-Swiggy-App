@@ -7,37 +7,53 @@ const Header = () => {
   const status = useOnlineStatus();
   return (
     <>
-      <header className="header">
-        <div className="logo-container">
-          <img src={LOGO_URL} className="logo" />
+      <header className="flex justify-between bg-pink-200 shadow-lg ">
+        <div>
+          <img src={LOGO_URL} className="w-28 h-28 min-w-10 min-h-10" />
         </div>
-        <nav className="nav-items">
-          <ul>
-            <li>Online Status | {status === "online" ? "💡" : "🔴"}</li>
+        <nav className="flex justify-center items-center p-8">
+          <ul className="flex gap-x-6">
+            <li className="text-xl  px-5">
+              Online Status | {status === "online" ? "💡" : "🔴"}
+            </li>
             <li>
-              <Link to="/" className="link">
+              <Link
+                to="/"
+                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="grocery" className="link">
+              <Link
+                to="grocery"
+                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+              >
                 Grocery
               </Link>
             </li>
             <li>
-              <Link to="about" className="link">
+              <Link
+                to="about"
+                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="contact" className="link">
+              <Link
+                to="contact"
+                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+              >
                 Contact
               </Link>
             </li>
-            <li>Cart</li>
+            <li className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500">
+              Cart
+            </li>
             <li>
               <button
-                className="login-logout "
+                className="text-2xl  hover:bg-yellow-300 hover:text-3xl bg-blue-500 text-white px-3  tracking-wide rounded-md pb-0.5"
                 onClick={() =>
                   setButton(button === "Login" ? "Logout" : "Login")
                 }

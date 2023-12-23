@@ -12,7 +12,7 @@ const RestaurantCard = ({
 }) => {
   return (
     <>
-      <section className="res-card">
+      <section className="">
         <img
           className="res-logo"
           src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
