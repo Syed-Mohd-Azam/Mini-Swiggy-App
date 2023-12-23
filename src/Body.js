@@ -55,7 +55,7 @@ const Body = () => {
                 onChange={(e) => setSearch(e.target.value)}
               />
               <button
-                className="bg-slate-400 rounded-md text-white font-bold py-2 px-2 cursor-pointer "
+                className="bg-lime-400 rounded-md text-white font-bold py-2 px-2 cursor-pointer hover:bg-slate-400"
                 onClick={(e) => e.preventDefault()}
               >
                 Search
