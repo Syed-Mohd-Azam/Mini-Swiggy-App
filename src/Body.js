@@ -76,7 +76,7 @@ const Body = () => {
               Top Rated Restaurants
             </button>
           </div>
-          <div className="res-container">
+          <div className="flex flex-wrap gap-4 px-5 justify-center">
             {filteredRestaurants.map((restaurant) => (
               <Link
                 className="link"

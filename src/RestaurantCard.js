@@ -12,17 +12,19 @@ const RestaurantCard = ({
 }) => {
   return (
     <>
-      <section className="">
+      <section className="w-60 h-64 rounded-t-2xl">
         <img
-          className="res-logo"
+          className="w-full h-1/2 rounded-t-2xl"
           src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
           alt="Restaurant Logo"
         />
-        <section className="res-info">
-          <h1 className="info res-name">{name}</h1>
-          <h5 className="info">{`${cuisines.slice(0, 2).join(", ")}, ...`}</h5>
-          <h5 className="info">{avgRating} stars</h5>
-          <h5 className="info">{deliveryTime} minutes</h5>
+        <section className="bg-gray-50 w-full h-1/2 rounded-b-2xl px-2 py-1">
+          <h1 className="text-orange-800 italic font-bold mb-1">{name}</h1>
+          <h5 className="text-stone-400 font-bold">{`${cuisines
+            .slice(0, 2)
+            .join(", ")}, ...`}</h5>
+          <h5 className="text-stone-400 font-bold">{avgRating} stars</h5>
+          <h5 className="text-stone-400 font-bold">{deliveryTime} minutes</h5>
         </section>
       </section>
     </>
