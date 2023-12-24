@@ -44,8 +44,8 @@ const Body = () => {
   return (
     <>
       {listOfRestaurants.length > 0 ? (
-        <section>
-          <div className="flex gap-x-8 px-14 py-4 ">
+        <section className="mb-8">
+          <div className="flex gap-x-8 px-14 py-8 ">
             <div className="flex gap-x-3">
               <input
                 className="outline-2 outline-offset-1 outline-blue-500 px-2 border-blue-500 border-2 rounded-md"
@@ -55,14 +55,14 @@ const Body = () => {
                 onChange={(e) => setSearch(e.target.value)}
               />
               <button
-                className="bg-lime-400 rounded-md text-white font-bold py-2 px-2 cursor-pointer hover:bg-slate-400"
+                className="bg-lime-400 rounded-md text-white font-bold py-2 px-2 cursor-pointer hover:bg-slate-400 shadow-xl"
                 onClick={(e) => e.preventDefault()}
               >
                 Search
               </button>
             </div>
             <button
-              className="bg-cyan-950 text-white rounded-md p-2 font-bold cursor-pointer hover:text-cyan-950 hover:bg-white hover:border-cyan-950 hover:border-2"
+              className="bg-cyan-950 text-white rounded-md p-2 font-bold cursor-pointer hover:text-cyan-950 hover:bg-white hover:border-cyan-950 hover:border-2 shadow-xl"
               onClick={() => {
                 setFilteredRestaurants(
                   listOfRestaurants.filter(
@@ -74,7 +74,7 @@ const Body = () => {
               Top Rated Restaurants
             </button>
           </div>
-          <div className="flex flex-wrap gap-4 px-10 ">
+          <div className="flex flex-wrap gap-y-12 gap-x-4 px-10 ">
             {filteredRestaurants.map((restaurant) => (
               <Link
                 className="link"

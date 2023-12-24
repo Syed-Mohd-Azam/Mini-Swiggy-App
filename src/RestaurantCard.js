@@ -12,13 +12,16 @@ const RestaurantCard = ({
 }) => {
   return (
     <>
-      <section className="w-60 h-64 rounded-t-2xl hover:scale-90 ">
+      <section className="w-60 h-64 rounded-t-2xl  ">
         <img
-          className="w-full h-1/2 rounded-t-2xl hover:skew-y-6"
+          className="w-full h-1/2 rounded-2xl mb-2 hover:scale-90 bg-blend-darken shadow-xl"
           src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
           alt="Restaurant Logo"
         />
-        <section className="bg-gray-50 w-full h-1/2 rounded-b-2xl px-2 py-1">
+        <section
+          style={{ backgroundColor: "#f0f0f0" }}
+          className="w-full h-1/2 rounded-2xl px-2 py-1 hover:skew-y-6 shadow-xl"
+        >
           <h1 className="text-orange-800 italic font-bold mb-1">{name}</h1>
           <h5 className="text-stone-400 font-bold">{`${cuisines
             .slice(0, 2)
