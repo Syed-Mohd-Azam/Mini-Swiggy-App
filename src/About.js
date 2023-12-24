@@ -3,9 +3,9 @@ import UserClass from "./UserClass";
 const About = () => {
   return (
     <>
-      <main>
-        <h1>About Us Page</h1>
-        <h2>This is React Series</h2>
+      <main className="p-4">
+        <h1 className="p-2">About Us Page</h1>
+        <h2 className="p-2">This is React Series</h2>
         <User
           name="Syed Mohd Azam (function)"
           location="Aligarh (function)"
