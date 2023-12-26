@@ -25,12 +25,16 @@ const Body = () => {
   const fetchData = async () => {
     const response = await fetch(SWIGGY_API);
     const json = await response.json();
+    console.log(
+      json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
     setListOfRestaurants(
-      json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+      json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
     setFilteredRestaurants(
-      json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle
+      json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
   };
@@ -43,7 +47,7 @@ const Body = () => {
   }
   return (
     <>
-      {listOfRestaurants.length > 0 ? (
+      {listOfRestaurants?.length > 0 ? (
         <section className="mb-8">
           <div className="flex gap-x-8 px-14 py-8 ">
             <div className="flex gap-x-3">

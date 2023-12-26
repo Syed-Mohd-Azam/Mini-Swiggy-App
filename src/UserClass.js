@@ -1,36 +1,48 @@
 import React from "react";
+import Image from "./Image";
 class UserClass extends React.Component {
   constructor(props) {
-    console.log(props.name + " Constructor ");
+    // console.log(props.name + " Constructor ");
     super(props);
-    console.log(props);
+    // console.log(props);
     this.state = {
-      countOne: 0,
+      userInfo: {
+        name: "Dummy Name",
+        location: "Dummy Location",
+        avatar_url: null,
+      },
     };
   }
-  componentDidMount() {
-    console.log(this.props.name + " Component Did Mount");
+  async componentDidMount() {
+    // console.log(this.props.name + " Component Did Mount");
+    const response = await fetch("https://api.github.com/users/Syed-Mohd-Azam");
+    const json = await response.json();
+    console.log(json);
+    this.setState({ userInfo: json });
   }
   render() {
-    console.log(this.props.name + " Render");
-    const { name, location, contact } = this.props;
-    const { countOne } = this.state;
+    // console.log(this.props.name + " Render");
+    const { name, location, avatar_url } = this.state.userInfo;
     return (
       <main className="border-2 border-black m-2 p-2 rounded-md">
-        <h1>Count One: {countOne}</h1>
-        <button
-          onClick={() => {
-            this.setState({
-              countOne: this.state.countOne + 1,
-            });
-          }}
-          className="bg-yellow-300 text-black border-black border-0 px-2 py-1 rounded-md"
-        >
-          Count Increase
-        </button>
-        <h2>Name:{name}</h2>
-        <h3>Location:{location}</h3>
-        <h4>Contact:{contact}</h4>
+        {avatar_url === null ? (
+          <Image />
+        ) : (
+          <img
+            src={avatar_url}
+            alt="Github Profile Photo"
+            className="w-28 h-28"
+          />
+        )}
+        <h2>
+          Name: <b> {name}</b>{" "}
+        </h2>
+        <h3>
+          Location: <b> {location}</b>
+        </h3>
+        <h4>
+          Contact: <b> smazamamu@gmail.com</b>
+        </h4>
       </main>
     );
   }
