@@ -26,3 +26,5 @@ class About extends React.Component {
 }
 
 export default About;
+
+// Life Cycle of Class Component
