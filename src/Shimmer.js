@@ -1,4 +1,5 @@
 import Card from "./Card";
+// Shimmer Component created to show fake cards before loading to the main content so that it assumes that data is fetching and taking some time to load.
 const Shimmer = () => {
   return (
     <>
