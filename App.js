@@ -9,6 +9,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // code chunking
 // lazy loading
 // on-demand loading
+
+// Lazy loading is a technique for waiting to load certain parts of a webpage — especially images — until they are needed. Instead of loading everything all at once, known as "eager" loading, the browser does not request certain resources until the user interacts in such a way that the resources are needed.
+
 const Grocery = lazy(() => import("./src/Grocery"));
 const About = lazy(() => import("./src/About"));
 const Contact = lazy(() => import("./src/Contact"));
