@@ -1,6 +1,8 @@
+/* Tailwind CSS initialised and ready to use */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* #heading {
   color: red;
 }
