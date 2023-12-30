@@ -1,3 +1,4 @@
+// Card Component created to display fake card to show before displaying the actual data.
 const Card = () => {
   return (
     <>
