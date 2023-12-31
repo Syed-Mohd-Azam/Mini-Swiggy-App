@@ -1,6 +1,5 @@
 import ItemCard from "./ItemCard";
 const ItemCards = ({ itemCards }) => {
-  console.log(itemCards);
   return (
     <>
       {itemCards?.map(({ card: { info } }) => (

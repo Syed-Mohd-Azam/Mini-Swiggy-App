@@ -25,6 +25,7 @@ const RestaurantMenu = () => {
     resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (category) => category?.card?.card?.["@type"].includes("ItemCategory")
     );
+  console.log(categories);
   return (
     <>
       <main className="max-w-4xl mx-auto mt-3 mb-3">
@@ -38,15 +39,15 @@ const RestaurantMenu = () => {
               {locality}, {city}
             </h4>
           </article>
-          <button className="p-2 w-16 h-24  rounded-sm shadow-md border-solid">
-            <h5 className="text-xl text-brown-500 font-bold mb-1">
+          <section className="py-4 px-4  rounded-lg shadow-md border-solid  bg-pink-200">
+            <h5 className="text-xl text-brown font-bold mb-1 text-center">
               {avgRating}
             </h5>
-            <hr />
-            <h6 className="text-sm  text-brown-500 font-bold mt-1 italic">
+            <hr className="border-t-2 border-black" />
+            <h6 className="text-sm  text-brown font-bold mt-1 italic">
               {totalRatingsString}
             </h6>
-          </button>
+          </section>
         </section>
         {categories?.map(
           (
