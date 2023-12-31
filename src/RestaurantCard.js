@@ -36,12 +36,12 @@ const RestaurantCard = ({
 // Higher Order Component
 
 export const withPromotedLabel = (RestaurantCard) => {
-  return () => {
+  return ({ restaurant }) => {
     return (
       <>
         <section>
           <label>Promoted</label>
-          <RestaurantCard />
+          <RestaurantCard restaurant={restaurant} />
         </section>
       </>
     );

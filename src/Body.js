@@ -86,7 +86,11 @@ const Body = () => {
                 to={"restaurant-menu/" + restaurant?.info?.id}
                 key={restaurant?.info?.id}
               >
-                <RestaurantCard restaurant={restaurant} />
+                {restaurant?.info?.aggregatedDiscountInfoV3 ? (
+                  <RestaurantCardPromoted restaurant={restaurant} />
+                ) : (
+                  <RestaurantCard restaurant={restaurant} />
+                )}
               </Link>
             ))}
           </div>
