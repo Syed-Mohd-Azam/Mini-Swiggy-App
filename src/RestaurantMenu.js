@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import useMenu from "./custom-hooks/useMenu";
+import RestaurantCategory from "./RestaurantCategory";
 const RestaurantMenu = () => {
   const { resid } = useParams();
   const resInfo = useMenu(resid);
-  console.log(resInfo);
+  // console.log(resInfo);
   if (resInfo === null) {
     return (
       <h1 style={{ color: "brown", padding: "1.5rem" }}>
@@ -27,7 +28,7 @@ const RestaurantMenu = () => {
   return (
     <>
       <main className="max-w-4xl mx-auto mt-3 mb-3">
-        <section className="flex justify-between">
+        <section className="flex justify-between mt-5 mb-5">
           <article>
             <h1 className="font-bold text-3xl">{name}</h1>
             <h4 className="italic">
@@ -47,6 +48,22 @@ const RestaurantMenu = () => {
             </h6>
           </button>
         </section>
+        {categories?.map(
+          (
+            {
+              card: {
+                card: { itemCards, title },
+              },
+            },
+            index
+          ) => (
+            <RestaurantCategory
+              key={index}
+              itemCards={itemCards}
+              title={title}
+            />
+          )
+        )}
       </main>
     </>
   );
