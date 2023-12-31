@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -12,6 +12,7 @@ const Body = () => {
   // State variable is a variable which stores the value or you can say a state of a component and as sson as its value is changed component is re-rendered.
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   useEffect(() => {
     fetchData();
   }, []);

@@ -33,4 +33,18 @@ const RestaurantCard = ({
     </>
   );
 };
+// Higher Order Component
+
+export const withPromotedLabel = (RestaurantCard) => {
+  return () => {
+    return (
+      <>
+        <section>
+          <label>Promoted</label>
+          <RestaurantCard />
+        </section>
+      </>
+    );
+  };
+};
 export default RestaurantCard;
