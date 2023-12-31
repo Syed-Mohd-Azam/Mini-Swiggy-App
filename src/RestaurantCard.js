@@ -14,7 +14,7 @@ const RestaurantCard = ({
     <>
       <section className="w-60 h-64 rounded-t-2xl  ">
         <img
-          className="w-full h-1/2 rounded-2xl mb-2 hover:scale-90 bg-blend-darken shadow-xl"
+          className="w-full h-1/2 rounded-2xl mb-2 hover:scale-90 bg-blend-darken shadow-xl  "
           src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
           alt="Restaurant Logo"
         />
@@ -39,8 +39,11 @@ export const withPromotedLabel = (RestaurantCard) => {
   return ({ restaurant }) => {
     return (
       <>
-        <section>
-          <label>Promoted</label>
+        <section className="relative">
+          <label className="font-bold absolute top-0 left-0 p-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white z-10 rounded-lg">
+            {restaurant?.info?.aggregatedDiscountInfoV3?.header}{" "}
+            {restaurant?.info?.aggregatedDiscountInfoV3?.subHeader}
+          </label>
           <RestaurantCard restaurant={restaurant} />
         </section>
       </>
