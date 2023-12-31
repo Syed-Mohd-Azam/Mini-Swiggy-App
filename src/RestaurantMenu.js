@@ -40,11 +40,11 @@ const RestaurantMenu = () => {
             </h4>
           </article>
           <section className="py-4 px-4  rounded-lg shadow-md border-solid  bg-pink-200">
-            <h5 className="text-xl text-brown font-bold mb-1 text-center">
+            <h5 className="text-xl text-white font-bold mb-1 text-center">
               {avgRating}
             </h5>
-            <hr className="border-t-2 border-black" />
-            <h6 className="text-sm  text-brown font-bold mt-1 italic">
+            <hr className="border-t-2 border-white" />
+            <h6 className="text-sm  text-white font-bold mt-1 italic">
               {totalRatingsString}
             </h6>
           </section>
