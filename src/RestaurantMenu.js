@@ -7,7 +7,7 @@ const RestaurantMenu = () => {
   // console.log(resInfo);
   if (resInfo === null) {
     return (
-      <h1 style={{ color: "brown", padding: "1.5rem" }}>
+      <h1 className="text-center p-5 m-5 text-pink-300 text-4xl">
         Please Wait!! Data is Loading .....
       </h1>
     );
