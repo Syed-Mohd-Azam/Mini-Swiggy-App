@@ -1,5 +1,5 @@
 import { GITHUB_API } from "./constants/constants";
-import { CORS_PROXY_URL } from "./constants/constants";
+// import { CORS_PROXY_URL } from "./constants/constants";
 import React from "react";
 import Image from "./Image";
 class UserClass extends React.Component {
@@ -17,7 +17,7 @@ class UserClass extends React.Component {
   }
   async componentDidMount() {
     // console.log(this.props.name + " Component Did Mount");
-    const response = await fetch(CORS_PROXY_URL + GITHUB_API);
+    const response = await fetch(GITHUB_API);
     const json = await response.json();
     console.log(json);
     this.setState({ userInfo: json });

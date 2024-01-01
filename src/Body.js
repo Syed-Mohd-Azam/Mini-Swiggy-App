@@ -1,4 +1,4 @@
-import { CORS_PROXY_URL } from "./constants/constants";
+// import { CORS_PROXY_URL } from "./constants/constants";
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -25,7 +25,7 @@ const Body = () => {
     );
   }, [search]);
   const fetchData = async () => {
-    const response = await fetch(CORS_PROXY_URL + SWIGGY_API);
+    const response = await fetch(SWIGGY_API);
     const json = await response.json();
     setListOfRestaurants(
       json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
