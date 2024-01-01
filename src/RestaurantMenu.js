@@ -7,7 +7,7 @@ const RestaurantMenu = () => {
   // console.log(resInfo);
   if (resInfo === null) {
     return (
-      <h1 className="text-center p-5 m-5 text-pink-300 text-4xl">
+      <h1 className="text-center p-5 m-5 text-pink-400 text-4xl">
         Please Wait!! Data is Loading .....
       </h1>
     );
@@ -29,17 +29,17 @@ const RestaurantMenu = () => {
   return (
     <>
       <main className="max-w-4xl mx-auto mt-3 mb-3">
-        <section className="flex justify-between mt-5 mb-5">
-          <article>
+        <section className="flex justify-between mt-5 mb-5 ">
+          <article className="hover:scale-125 cursor-pointer">
             <h1 className="font-bold text-3xl">{name}</h1>
-            <h4 className="italic">
+            <h4 className="italic ">
               {cuisines.join(", ")} -- {costForTwoMessage}
             </h4>
-            <h4 className="italic">
+            <h4 className="italic ">
               {locality}, {city}
             </h4>
           </article>
-          <section className="py-4 px-4  rounded-lg shadow-md border-solid  bg-pink-200">
+          <section className="py-4 px-4  rounded-lg shadow-xl border-solid  bg-pink-400 hover:scale-125 cursor-pointer">
             <h5 className="text-xl text-white font-bold mb-1 text-center">
               {avgRating}
             </h5>

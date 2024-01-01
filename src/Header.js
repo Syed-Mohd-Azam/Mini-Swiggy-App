@@ -7,19 +7,19 @@ const Header = () => {
   const status = useOnlineStatus();
   return (
     <>
-      <header className="flex justify-between bg-pink-200 shadow-lg ">
+      <header className="flex justify-between bg-pink-400 shadow-lg ">
         <div>
           <img src={LOGO_URL} className="w-28 h-28 min-w-10 min-h-10" />
         </div>
         <nav className="flex justify-center items-center p-8">
           <ul className="flex gap-x-6">
-            <li className="text-xl  px-5">
+            <li className="text-2xl  px-5 text-white font-bold italic">
               Online Status | {status === "online" ? "💡" : "🔴"}
             </li>
             <li>
               <Link
                 to="/"
-                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+                className="text-2xl hover:text-3xl hover:text-violet-500 text-white font-bold italic"
               >
                 Home
               </Link>
@@ -27,7 +27,7 @@ const Header = () => {
             <li>
               <Link
                 to="grocery"
-                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+                className="text-2xl text-white hover:text-3xl hover:text-violet-500 font-bold italic"
               >
                 Grocery
               </Link>
@@ -35,7 +35,7 @@ const Header = () => {
             <li>
               <Link
                 to="about"
-                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+                className="text-2xl text-white hover:text-3xl hover:text-violet-500 font-bold italic"
               >
                 About
               </Link>
@@ -43,12 +43,12 @@ const Header = () => {
             <li>
               <Link
                 to="contact"
-                className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500"
+                className="text-2xl text-white hover:text-3xl hover:text-violet-500 font-bold italic"
               >
                 Contact
               </Link>
             </li>
-            <li className="text-xl text-orange-950 hover:text-3xl hover:text-violet-500">
+            <li className="text-2xl text-white hover:text-3xl hover:text-violet-500 font-bold italic">
               Cart
             </li>
             <li>

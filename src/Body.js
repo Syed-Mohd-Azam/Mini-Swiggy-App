@@ -37,7 +37,7 @@ const Body = () => {
   };
   if (onlineStatus === "offline") {
     return (
-      <h1 className="text-pink-300 text-center p-5 m-5 text-3xl ">
+      <h1 className="text-pink-400 text-center p-5 m-5 text-3xl ">
         Please check your Internet Connection!!
       </h1>
     );
