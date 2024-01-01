@@ -9,3 +9,5 @@ export const MENU_API =
 export const RESTAURANT_IMAGE_CLOUDINARY =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
 // All the constants defined and exported here  in this file and can be imported in a ny file where it needed.
+export const CORS_PROXY_URL = "https://corsproxy.io/?";
+export const GITHUB_API = "https://api.github.com/users/Syed-Mohd-Azam";
