@@ -27,7 +27,7 @@ const ItemCard = ({
               </button>
             </>
           )}
-          <button className="bg-white w-3/5  text-lg rounded-md italic text-amber-950  shadow-lg py-1 mt-2 mr-3 cursor-pointer hover:scale-110">
+          <button className="bg-black w-3/5  text-lg rounded-md italic text-white   shadow-lg py-2 mt-3 mr-3 cursor-pointer hover:scale-110 hover:bg-white hover:text-black">
             Add +
           </button>
         </section>
