@@ -17,7 +17,7 @@ const ItemCard = ({
             src={RESTAURANT_IMAGE_CLOUDINARY + imageId}
             alt="Restaurant-Logo"
           />
-          <button className="bg-white w-3/5 mx-auto text-lg rounded-md italic text-amber-950 absolute bottom-0 right-2">
+          <button className="bg-white w-3/5 mx-auto text-lg rounded-md italic text-amber-950 absolute bottom-0 right-2 shadow-lg py-2">
             Add +
           </button>
         </section>
