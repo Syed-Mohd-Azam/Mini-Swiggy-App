@@ -11,13 +11,23 @@ const ItemCard = ({
           </h1>
           <p className="font-bold text-lg text-white my-6">{description}</p>
         </section>
-        <section className="w-3/12 flex flex-col justify-center items-end relative">
-          <img
-            className="w-36 h-32  rounded-xl"
-            src={RESTAURANT_IMAGE_CLOUDINARY + imageId}
-            alt="Restaurant-Logo"
-          />
-          <button className="bg-white w-3/5 mx-auto text-lg rounded-md italic text-amber-950 absolute bottom-0 right-2 shadow-lg py-2">
+        <section className="w-3/12 flex flex-col justify-center items-end">
+          {imageId ? (
+            <>
+              <img
+                className="min-w-36 min-h-32 w-36 h-32 rounded-xl shadow-2xl hover:scale-90 hover:translate-x-6 cursor-pointer"
+                src={RESTAURANT_IMAGE_CLOUDINARY + imageId}
+                alt="Restaurant-Logo"
+              />
+            </>
+          ) : (
+            <>
+              <button className="min-w-36 min-h-32 w-36 h-32 rounded-xl shadow-2xl hover:scale-90 hover:translate-x-6 cursor-pointer text-white font-bold text-xl bg-black">
+                Image not Avaailable
+              </button>
+            </>
+          )}
+          <button className="bg-white w-3/5  text-lg rounded-md italic text-amber-950  shadow-lg py-1 mt-2 mr-3 cursor-pointer hover:scale-110">
             Add +
           </button>
         </section>
