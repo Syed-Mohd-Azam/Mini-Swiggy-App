@@ -32,7 +32,7 @@ const RestaurantMenu = () => {
         <section className="flex justify-between mt-5 mb-5 ">
           <article className="hover:scale-125 cursor-pointer">
             <h1 className="font-bold text-3xl">{name}</h1>
-            <h4 className="italic ">
+            <h4 className="italic">
               {cuisines.join(", ")} -- {costForTwoMessage}
             </h4>
             <h4 className="italic ">
@@ -59,7 +59,7 @@ const RestaurantMenu = () => {
             index
           ) => (
             <RestaurantCategory
-              key={index}
+              key={title}
               itemCards={itemCards}
               title={title}
             />
