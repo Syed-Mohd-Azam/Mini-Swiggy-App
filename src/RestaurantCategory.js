@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ItemCards from "./ItemCards";
 const RestaurantCategory = ({
   title,
