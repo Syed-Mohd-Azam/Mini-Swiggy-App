@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
 import useMenu from "./custom-hooks/useMenu";
 import RestaurantCategory from "./RestaurantCategory";
+import { useState } from "react";
 const RestaurantMenu = () => {
   const { resid } = useParams();
   const resInfo = useMenu(resid);
+  const [showIndex, setShowIndex] = useState(0);
   // console.log(resInfo);
   if (resInfo === null) {
     return (
@@ -58,10 +60,14 @@ const RestaurantMenu = () => {
             },
             index
           ) => (
+            // Controlled Component RestaurantCategory
             <RestaurantCategory
               key={title}
+              index={index}
               itemCards={itemCards}
               title={title}
+              setShowIndex={setShowIndex}
+              showItems={index === showIndex && true}
             />
           )
         )}

@@ -1,12 +1,17 @@
 import { useState } from "react";
 import ItemCards from "./ItemCards";
-const RestaurantCategory = ({ title, itemCards }) => {
-  const [showItems, setShowItems] = useState(false);
+const RestaurantCategory = ({
+  title,
+  itemCards,
+  showItems,
+  index,
+  setShowIndex,
+}) => {
   return (
     <>
       <section
         className="mt-6 mb-4 bg-pink-300 rounded-xl shadow-lg p-7 cursor-pointer"
-        onClick={() => setShowItems(!showItems)}
+        onClick={() => setShowIndex(index)}
       >
         <article className="flex justify-between  ">
           <p className="text-white font-bold text-xl">
