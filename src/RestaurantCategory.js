@@ -10,7 +10,7 @@ const RestaurantCategory = ({
     <>
       <section
         className="mt-6 mb-4 bg-pink-300 rounded-xl shadow-lg p-7 cursor-pointer"
-        onClick={() => setShowIndex(index)}
+        onClick={() => setShowIndex(showItems ? null : index)}
       >
         <article className="flex justify-between  ">
           <p className="text-white font-bold text-xl">
