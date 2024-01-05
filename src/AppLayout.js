@@ -17,7 +17,9 @@ const AppLayout = () => {
     <>
       <UserContext.Provider value={{ loggedInUser: userName }}>
         <Header />
-        <Outlet />
+        <UserContext.Provider value={{ loggedInUser: "Syed Mohd Azam" }}>
+          <Outlet />
+        </UserContext.Provider>
       </UserContext.Provider>
     </>
   );
