@@ -1,5 +1,6 @@
 import UserClass from "./UserClass";
 import React from "react";
+import UserContext from "./constants/UserContext";
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -13,9 +14,14 @@ class About extends React.Component {
     return (
       <>
         <main className="p-4">
-          <h1 className="p-2">About Us Page</h1>
-          <h2 className="p-2">This is React Series</h2>
-
+          <div className="p-4">
+            LoggedInUser :
+            <UserContext.Consumer>
+              {({ loggedInUser }) => (
+                <span className="font-bold "> {loggedInUser} </span>
+              )}
+            </UserContext.Consumer>
+          </div>
           <UserClass name="First (Class)" location="India " />
           {/* <UserClass name="Second (Class)" location="United States" />
           <UserClass name="Third (Class)" location="Japan" /> */}
