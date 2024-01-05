@@ -41,12 +41,15 @@ const RestaurantMenu = () => {
               {locality}, {city}
             </h4>
           </article>
-          <section className="py-4 px-4  rounded-lg shadow-xl border-solid  bg-pink-300 hover:scale-125 cursor-pointer">
-            <h5 className="text-xl text-white font-bold mb-1 text-center">
+          <section
+            style={{ backgroundColor: "#f0f0f0" }}
+            className="py-4 px-4  rounded-lg shadow-xl border-solid  hover:scale-125 cursor-pointer"
+          >
+            <h5 className="text-xl text-black font-bold mb-1 text-center">
               {avgRating}
             </h5>
-            <hr className="border-t-2 border-white" />
-            <h6 className="text-sm  text-white font-bold mt-1 italic">
+            <hr className="border-t-2 border-black" />
+            <h6 className="text-sm  text-black font-bold mt-1 italic">
               {totalRatingsString}
             </h6>
           </section>

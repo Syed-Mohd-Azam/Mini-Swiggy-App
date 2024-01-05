@@ -4,12 +4,12 @@ const ItemCard = ({
 }) => {
   return (
     <>
-      <section className="m-6 flex justify-between border-t-2 pt-4 border-white">
+      <section className="m-6 flex justify-between border-t-2 pt-4 border-black">
         <section className="w-8/12">
-          <h1 className="font-bold text-white text-xl">
+          <h1 className="font-bold text-black text-xl">
             {name} -- ₹ {(price || defaultPrice) / 100}
           </h1>
-          <p className="font-bold text-lg text-white my-6">{description}</p>
+          <p className="font-bold text-lg text-black my-6">{description}</p>
         </section>
         <section className="w-3/12 flex flex-col justify-center items-end">
           {imageId ? (

@@ -9,7 +9,7 @@ const Header = () => {
   const { loggedInUser } = useContext(UserContext);
   return (
     <>
-      <header className="flex justify-between bg-pink-300 shadow-lg ">
+      <header className="flex justify-between bg-black shadow-lg ">
         <div>
           <img src={LOGO_URL} className="w-28 h-28 min-w-10 min-h-10" />
         </div>
