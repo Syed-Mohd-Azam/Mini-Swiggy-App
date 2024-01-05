@@ -16,10 +16,15 @@ const AppLayout = () => {
   return (
     <>
       <UserContext.Provider value={{ loggedInUser: userName }}>
+<<<<<<< HEAD
         <Header />
         <UserContext.Provider value={{ loggedInUser: "Syed Mohd Azam" }}>
           <Outlet />
         </UserContext.Provider>
+=======
+        <Header />
+        <Outlet />
+>>>>>>> 322ce7174a801d3402fb76ea1a63375e8d23ec21
       </UserContext.Provider>
     </>
   );
