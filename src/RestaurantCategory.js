@@ -9,15 +9,14 @@ const RestaurantCategory = ({
   return (
     <>
       <section
-        style={{ backgroundColor: "#f0f0f0" }}
-        className="mt-6 mb-4 rounded-xl shadow-lg p-7 cursor-pointer"
+        className="mt-6 mb-4 rounded-xl shadow-lg p-7 cursor-pointer bg-purple-50"
         onClick={() => setShowIndex(showItems ? null : index)}
       >
         <article className="flex justify-between  ">
           <p className="text-black font-bold text-xl">
             {title} ({itemCards?.length})
           </p>
-          <p className="text-white font-bold">{showItems ? "▼" : "▲"}</p>
+          <p className="text-black font-bold">{showItems ? "▼" : "▲"}</p>
         </article>
         {showItems && (
           <article>

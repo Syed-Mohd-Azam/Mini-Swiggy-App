@@ -52,22 +52,15 @@ const Body = () => {
           <div className="flex gap-x-8 px-14 py-8 ">
             <div className="flex gap-x-3">
               <input
-                className="outline-2 outline-offset-1 outline-blue-500 px-2 border-blue-500 border-2 rounded-md"
                 type="search"
                 placeholder="Search Restaurant"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <button
-                className="bg-lime-400 rounded-md text-white font-bold py-2 px-2 cursor-pointer hover:bg-slate-400 shadow-xl"
-                onClick={(e) => e.preventDefault()}
-              >
-                Search
-              </button>
             </div>
             <button
               style={{ backgroundColor: "#f0f0f0" }}
-              className=" text-black rounded-md  font-bold cursor-pointer shadow-md px-3 hover:scale-90"
+              className=" text-black rounded-md  font-bold cursor-pointer shadow- px-3 hover:scale-90"
               onClick={() => {
                 setFilteredRestaurants(
                   listOfRestaurants.filter(

@@ -9,7 +9,7 @@ const RestaurantMenu = () => {
   // console.log(resInfo);
   if (resInfo === null) {
     return (
-      <h1 className="text-center p-5 m-5 text-pink-300 text-4xl">
+      <h1 className="text-center p-5 m-5 text-black text-4xl italic">
         Please Wait!! Data is Loading .....
       </h1>
     );
@@ -41,10 +41,7 @@ const RestaurantMenu = () => {
               {locality}, {city}
             </h4>
           </article>
-          <section
-            style={{ backgroundColor: "#f0f0f0" }}
-            className="py-4 px-4  rounded-lg shadow-xl border-solid  hover:scale-125 cursor-pointer"
-          >
+          <section className="py-4 px-4  rounded-lg shadow-xl border-solid  hover:scale-125 cursor-pointer bg-purple-50 ">
             <h5 className="text-xl text-black font-bold mb-1 text-center">
               {avgRating}
             </h5>
