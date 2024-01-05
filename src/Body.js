@@ -40,7 +40,7 @@ const Body = () => {
   };
   if (onlineStatus === "offline") {
     return (
-      <h1 className="text-pink-400 text-center p-5 m-5 text-3xl ">
+      <h1 className="text-black text-center p-5 m-5 text-3xl ">
         Please check your Internet Connection!!
       </h1>
     );
@@ -66,7 +66,8 @@ const Body = () => {
               </button>
             </div>
             <button
-              className="bg-cyan-950 text-white rounded-md p-2 font-bold cursor-pointer hover:text-cyan-950 hover:bg-white hover:border-cyan-950 hover:border-2 shadow-xl"
+              style={{ backgroundColor: "#f0f0f0" }}
+              className=" text-black rounded-md  font-bold cursor-pointer shadow-md px-3 hover:scale-90"
               onClick={() => {
                 setFilteredRestaurants(
                   listOfRestaurants.filter(
