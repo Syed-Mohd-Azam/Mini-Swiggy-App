@@ -88,7 +88,7 @@ const Body = () => {
             </section>
           </div>
           <div className="flex flex-wrap gap-y-12 gap-x-7 px-10 ">
-            {filteredRestaurants.map((restaurant) => (
+            {filteredRestaurants?.map((restaurant) => (
               <Link
                 className="link"
                 to={"restaurant-menu/" + restaurant?.info?.id}
