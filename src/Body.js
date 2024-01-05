@@ -50,17 +50,20 @@ const Body = () => {
       {listOfRestaurants?.length > 0 ? (
         <section className="mb-8">
           <div className="flex gap-x-8 px-14 py-8 ">
-            <div className="flex gap-x-3">
+            <div className="flex gap-x-3 border-4 rounded-lg border-purple-50 ">
               <input
+                className="p-2 hover:outline-none hover:border-0 hover:cursor-pointer border-collapse outline-none tracking-wide font-semibold"
                 type="search"
                 placeholder="Search Restaurant"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
+              <button className="bg-purple-50 px-2 tracking-wide font-semibold">
+                Search
+              </button>
             </div>
             <button
-              style={{ backgroundColor: "#f0f0f0" }}
-              className=" text-black rounded-md  font-bold cursor-pointer shadow- px-3 hover:scale-90"
+              className=" text-black rounded-md  cursor-pointer shadow- px-3 hover:scale-90 bg-purple-50 tracking-wide font-semibold"
               onClick={() => {
                 setFilteredRestaurants(
                   listOfRestaurants.filter(
