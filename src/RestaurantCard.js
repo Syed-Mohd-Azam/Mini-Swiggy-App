@@ -14,7 +14,7 @@ const RestaurantCard = ({
     <>
       <section className="w-60 h-64 rounded-t-2xl  ">
         <img
-          className="w-full h-1/2 rounded-2xl mb-2 hover:scale-90 bg-blend-darken shadow-xl  "
+          className="w-full h-1/2 rounded-2xl mb-2 hover:scale-90 bg-blend-darken shadow-xl  hover:brightness-50"
           src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
           alt="Restaurant Logo"
         />
