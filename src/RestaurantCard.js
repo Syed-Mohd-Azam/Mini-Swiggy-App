@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import { SWIGGY_IMAGE_CLOUDINARY } from "./constants/constants";
+import UserContext from "./constants/UserContext";
 const RestaurantCard = ({
   restaurant: {
     info: {
@@ -10,9 +12,10 @@ const RestaurantCard = ({
     },
   },
 }) => {
+  const { loggedInUser } = useContext(UserContext);
   return (
     <>
-      <section className="w-60 h-64 rounded-t-2xl  ">
+      <section className="w-72 h-80 rounded-t-2xl  ">
         <img
           className="w-full h-1/2 rounded-2xl mb-2 hover:scale-90 bg-blend-darken shadow-xl  hover:brightness-50"
           src={SWIGGY_IMAGE_CLOUDINARY + cloudinaryImageId}
@@ -20,7 +23,7 @@ const RestaurantCard = ({
         />
         <section
           style={{ backgroundColor: "#f0f0f0" }}
-          className="w-full h-1/2 rounded-2xl px-2 py-1 hover:skew-y-6 shadow-xl"
+          className="w-full h-1/2 rounded-2xl px-3 py-3 hover:skew-y-6 shadow-xl"
         >
           <h1 className="text-orange-800 italic font-bold mb-1">{name}</h1>
           <h5 className="text-stone-400 font-bold">{`${cuisines
@@ -28,6 +31,7 @@ const RestaurantCard = ({
             .join(", ")}, ...`}</h5>
           <h5 className="text-stone-400 font-bold">{avgRating} stars</h5>
           <h5 className="text-stone-400 font-bold">{deliveryTime} minutes</h5>
+          <h5 className="font-bold text-orange-800">User : {loggedInUser}</h5>
         </section>
       </section>
     </>
