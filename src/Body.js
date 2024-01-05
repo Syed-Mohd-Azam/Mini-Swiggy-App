@@ -1,11 +1,13 @@
 // import { CORS_PROXY_URL } from "./constants/constants";
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { SWIGGY_API } from "./constants/constants";
 import useOnlineStatus from "./custom-hooks/useOnlineStatus";
+import UserContext from "./constants/UserContext";
 const Body = () => {
+  const { setUserName, loggedInUser } = useContext(UserContext);
   const onlineStatus = useOnlineStatus();
   const [search, setSearch] = useState("");
   // State Variable --> Super Powerful Variable
@@ -75,6 +77,18 @@ const Body = () => {
             >
               Top Rated Restaurants
             </button>
+            <section className="flex gap-5 justify-center align-center">
+              <label className="text-lg italic font-medium p-2">
+                UserName{" "}
+              </label>
+              <input
+                className="border-2 border-sky-400 rounded-md p-2"
+                type="text"
+                placeholder="User Name"
+                value={loggedInUser}
+                onChange={(e) => setUserName(e.target.value)}
+              />
+            </section>
           </div>
           <div className="flex flex-wrap gap-y-12 gap-x-7 px-10 ">
             {filteredRestaurants.map((restaurant) => (
