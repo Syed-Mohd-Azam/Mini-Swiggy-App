@@ -42,6 +42,10 @@ Open your browser and visit http://localhost:1234 to see the app in action,becau
 
 ## Project Link (Below)
 
+Don't forget to add CORS extension to your browser as well as please toggle " ON " CORS extension from extension section. If you add the CORS extension but you do not Toggle ON the CORS extension then it does not worthy.
+
+So, please ADD the CORS extension and ON the CORS extension.
+
 Project Link : https://marvelous-boba-04d9c8.netlify.app/
 
 ## Hope you enjoyed and Happy Coding!!
