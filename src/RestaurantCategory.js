@@ -28,7 +28,7 @@ const RestaurantCategory = ({
               <>
                 <section className="p-5 m-5">
                   <span className=" text-3xl">🤔 </span>
-                  <span className=" text-white font-bold text-2xl">
+                  <span className=" text-black font-bold text-2xl">
                     Sorry!! No Item Cards
                   </span>
                 </section>
