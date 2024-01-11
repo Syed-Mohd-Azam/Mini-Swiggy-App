@@ -25,7 +25,7 @@ const Header = () => {
             <li>
               <Link
                 to="/"
-                className="text-2xl hover:text-3xl hover:text-violet-500 text-black  italic"
+                className="text-2xl hover:text-3xl hover:text-violet-500 text-black  italic text-black "
               >
                 Home
               </Link>
@@ -33,7 +33,7 @@ const Header = () => {
             <li>
               <Link
                 to="grocery"
-                className="text-2xl text-black hover:text-3xl hover:text-violet-500  italic"
+                className="text-2xl text-black hover:text-3xl hover:text-violet-500  italic text-black "
               >
                 Grocery
               </Link>
@@ -41,7 +41,7 @@ const Header = () => {
             <li>
               <Link
                 to="about"
-                className="text-2xl text-black hover:text-3xl hover:text-violet-500 italic"
+                className="text-2xl text-black hover:text-3xl hover:text-violet-500 italic "
               >
                 About
               </Link>
@@ -49,7 +49,7 @@ const Header = () => {
             <li>
               <Link
                 to="contact"
-                className="text-2xl text-black hover:text-3xl hover:text-violet-500 italic"
+                className="text-2xl text-black hover:text-3xl hover:text-violet-500 italic "
               >
                 Contact
               </Link>
