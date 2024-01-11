@@ -54,10 +54,10 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-            <li className="flex gap-1">
+            <li className="flex gap-1 text-2xl text-black hover:text-3xl hover:text-violet-500 italic">
               <img
                 src={Cart}
-                className="bg-purle-50  hover:text-3xl hover:text-violet-500 italic w-10 h-10"
+                className="bg-purle-50  italic w-10 h-10 hover:cursor-pointer"
               />
               <span className="text-2xl font-bold">{length}</span>
             </li>
