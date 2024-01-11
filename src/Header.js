@@ -9,6 +9,7 @@ const Header = () => {
   const [button, setButton] = useState("Login");
   const status = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
+  // subscribing the store using selector
   const length = useSelector((state) => state.cart.items.length);
   return (
     <>
