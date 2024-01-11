@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import UserContext from "./constants/UserContext";
 import { useState, useEffect } from "react";
+import { Provider } from "react-redux";
+import appStore from "./constants/configureStore";
 
 // AppLayout Component is created to decide the structure of the application.
 const AppLayout = () => {
@@ -16,10 +18,12 @@ const AppLayout = () => {
   }, []);
   return (
     <>
-      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-        <Header />
-        <Outlet />
-      </UserContext.Provider>
+      <Provider store={appStore}>
+        <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+          <Header />
+          <Outlet />
+        </UserContext.Provider>
+      </Provider>
     </>
   );
 };
