@@ -1,12 +1,15 @@
 import { useContext, useState } from "react";
 import { LOGO_URL } from "./constants/constants";
+import Cart from "./cart.jpeg";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "./custom-hooks/useOnlineStatus";
 import UserContext from "./constants/UserContext";
+import { useSelector } from "react-redux";
 const Header = () => {
   const [button, setButton] = useState("Login");
   const status = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
+  const length = useSelector((state) => state.cart.items.length);
   return (
     <>
       <header className="flex justify-between shadow-lg bg-purple-50">
@@ -50,8 +53,12 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-            <li className="text-2xl text-black hover:text-3xl hover:text-violet-500 italic">
-              Cart
+            <li className="flex gap-1">
+              <img
+                src={Cart}
+                className="bg-purle-50  hover:text-3xl hover:text-violet-500 italic w-10 h-10"
+              />
+              <span className="text-2xl font-bold">{length}</span>
             </li>
             <li>
               <button
