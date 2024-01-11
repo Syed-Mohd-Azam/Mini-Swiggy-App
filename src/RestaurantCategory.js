@@ -8,15 +8,17 @@ const RestaurantCategory = ({
 }) => {
   return (
     <>
-      <section
-        className="mt-6 mb-4 rounded-xl shadow-lg p-7 cursor-pointer bg-purple-50"
-        onClick={() => setShowIndex(showItems ? null : index)}
-      >
+      <section className="mt-6 mb-4 rounded-xl shadow-lg p-7  bg-purple-50">
         <article className="flex justify-between  ">
           <p className="text-black font-bold text-xl">
             {title} ({itemCards?.length})
           </p>
-          <p className="text-black font-bold">{showItems ? "▼" : "▲"}</p>
+          <p
+            className="text-black font-bold cursor-pointer"
+            onClick={() => setShowIndex(showItems ? null : index)}
+          >
+            {showItems ? "▼" : "▲"}
+          </p>
         </article>
         {showItems && (
           <article>
