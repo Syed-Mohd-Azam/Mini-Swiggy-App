@@ -26,22 +26,26 @@ Before you start, make sure you have the following installed:
 Node.js and npm (Node Package Manager)
 Basic understanding of React and JavaScript
 
-## Most Important thing to remember (Please!!)
+## Most Important thing to remember (Please!!) 🚀
 
 Steps:-
 
--- Go to Google Chrome or any browser where you want to run the application, please add CORS Extension to that browser where you want to run the application, other wise you will not able to ru the application and browser will show the CORS error to you.Once you add the CORS extension.
--- Then next step is that you will go to the extensions section of the browser and will click on CORS extension and there will be option "Toggle on/off ". Please click "ON" so that it will be on and colored. Then refresh the browser and you will be able to enjoy the application.
+-- Go to Google Chrome or any browser where you want to run the application, please add CORS Extension to that browser where you want to run the application, other wise you will not able to run the application and browser will show the CORS error to you. 
+-- Once you add the CORS extension, then next step is that you will go to the extensions section of the browser and will click on CORS extension and there will be option "Toggle on/off ". Please click "ON" so that it will be ON and colored. Then refresh the browser and you will be able to run and enjoy the application.
 
 ## Getting Started
 
 Clone the repository to your local machine.
 Navigate to the project directory and install dependencies using npm install by writing the command "npm install".
 Start the development server with npm start.
-Open your browser and visit http://localhost:1234 to see the app in action,because parcel as a bundler used in this project.
+Open your browser and visit http://localhost:1234 to see the app in action, because parcel as a bundler used in this project.
 
 ## Project Link (Below)
 
+Don't forget to add CORS extension to your browser as well as please toggle " ON " CORS extension from extension section. If you add the CORS extension but you do not Toggle ON the CORS extension then it does not worthy.
+
+🚀 So, please ADD the CORS extension and ON the CORS extension.
+
 Project Link : https://marvelous-boba-04d9c8.netlify.app/
 
-## Hope you enjoyed and Happy Coding!!
+## Hope you enjoyed and Happy Coding!! 🚀🚀
