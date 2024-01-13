@@ -7,7 +7,7 @@ const Cart = () => {
     <>
       <section className="w-9/12 mx-auto">
         <section className="m-6 text-center font-bold text-2xl">
-          Cart Items
+          Cart Items ( {cartItems?.length} items )
         </section>
         {cartItems?.length > 0 ? (
           cartItems?.map((item) => (
