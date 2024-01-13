@@ -1,22 +1,22 @@
 import { RESTAURANT_IMAGE_CLOUDINARY } from "./constants/constants";
-const ItemCard = ({
-  info: { name, imageId, description, price, defaultPrice },
-}) => {
+const ItemCard = (item) => {
+  const handleAddItem = () => {};
   return (
     <>
       <section className="m-6 flex justify-between border-t-2 pt-4 border-black">
         <section className="w-8/12">
           <h1 className=" text-black text-xl">
-            {name} -- ₹ {(price || defaultPrice) / 100}
+            {item?.info?.name} -- ₹{" "}
+            {(item?.info?.price || item?.info?.defaultPrice) / 100}
           </h1>
-          <p className=" text-lg text-black my-6">{description}</p>
+          <p className=" text-lg text-black my-6">{item?.info?.description}</p>
         </section>
         <section className="w-3/12 flex flex-col justify-center items-end">
-          {imageId ? (
+          {item?.info?.imageId ? (
             <>
               <img
                 className="min-w-36 min-h-32 w-36 h-32 rounded-xl shadow-2xl hover:scale-90 hover:translate-x-6 cursor-pointer"
-                src={RESTAURANT_IMAGE_CLOUDINARY + imageId}
+                src={RESTAURANT_IMAGE_CLOUDINARY + item?.info?.imageId}
                 alt="Restaurant-Logo"
               />
             </>
@@ -27,7 +27,10 @@ const ItemCard = ({
               </button>
             </>
           )}
-          <button className="bg-black w-3/5  text-lg rounded-md italic text-white   shadow-lg py-2 mt-3 mr-3 cursor-pointer hover:scale-110 hover:bg-white hover:text-black">
+          <button
+            className="bg-black w-3/5  text-lg rounded-md italic text-white   shadow-lg py-2 mt-3 mr-3 cursor-pointer hover:scale-110 hover:bg-white hover:text-black "
+            onClick={handleAddItem}
+          >
             Add +
           </button>
         </section>
