@@ -10,7 +10,7 @@ const Header = () => {
   const status = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
   // subscribing the store using selector
-  const length = useSelector((state) => state.cart.items.length);
+  const length = useSelector((state) => state?.cart?.items?.length);
   return (
     <>
       <header className="flex justify-between shadow-lg bg-purple-50">

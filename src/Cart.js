@@ -10,8 +10,8 @@ const Cart = () => {
   };
   return (
     <>
-      <section className="w-9/12 mx-auto">
-        <section className="m-6 text-center font-bold text-2xl">
+      <section className="w-4/5 mx-auto py-2">
+        <section className="m-6 text-center font-bold text-2xl py-2">
           {cartItems?.length > 0
             ? `Cart Items ( ${cartItems?.length} items )`
             : `No Items in the Cart !`}

@@ -1,15 +1,31 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RESTAURANT_IMAGE_CLOUDINARY } from "./constants/constants";
+import { removeItem } from "./constants/cartSlice";
 const CartItem = ({ item }) => {
+  const dispatch = useDispatch();
+  const items = useSelector((store) => store?.cart?.items);
+  const handleCartDelete = (item) => {
+    dispatch(
+      removeItem(
+        items?.filter((cartItem) => cartItem?.info?.id !== item?.info?.id)
+      )
+    );
+  };
   return (
     <>
-      <section className="m-6 my-8 flex justify-between  pt-4 border-black bg-purple-50 p-8 rounded-xl shadow-lg">
+      <section className="m-6 my-8 flex justify-between   border-black bg-purple-50 p-8 rounded-xl shadow-lg">
         <section className="w-8/12">
           <h1 className=" text-black text-xl font-semibold ">
             {item?.info?.name} -- ₹{" "}
             {(item?.info?.price || item?.info?.defaultPrice) / 100}
           </h1>
           <p className=" text-lg text-black my-6">{item?.info?.description}</p>
+          <button
+            className="bg-black text-purple-50 p-2 rounded-lg font-semibold hover:bg-yellow-200 hover:text-black hover:font-semibold"
+            onClick={() => handleCartDelete(item)}
+          >
+            Remove Item
+          </button>
         </section>
         <section className="w-3/12 flex flex-col justify-center items-end">
           {item?.info?.imageId ? (
