@@ -1,6 +1,11 @@
+import { useDispatch } from "react-redux";
 import { RESTAURANT_IMAGE_CLOUDINARY } from "./constants/constants";
+import { addItem } from "./constants/cartSlice";
 const ItemCard = (item) => {
-  const handleAddItem = () => {};
+  const dispatch = useDispatch();
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
   return (
     <>
       <section className="m-6 flex justify-between border-t-2 pt-4 border-black">
@@ -29,7 +34,7 @@ const ItemCard = (item) => {
           )}
           <button
             className="bg-black w-3/5  text-lg rounded-md italic text-white   shadow-lg py-2 mt-3 mr-3 cursor-pointer hover:scale-110 hover:bg-white hover:text-black "
-            onClick={handleAddItem}
+            onClick={() => handleAddItem(item)}
           >
             Add +
           </button>
