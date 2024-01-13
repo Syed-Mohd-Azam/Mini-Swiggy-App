@@ -11,10 +11,15 @@ const Cart = () => {
             ? `Cart Items ( ${cartItems?.length} items )`
             : `No Items in the Cart !`}
         </section>
+        <section className="text-center">
+          <button className="bg-purple-50 text-black font-bold p-2 rounded-xl hover:bg-black hover:text-purple-50 ">
+            Clear Cart
+          </button>
+        </section>
         {cartItems?.length > 0
           ? cartItems?.map((item) => (
               <>
-                <section className="m-6 my-8 flex justify-between  pt-4 border-black bg-purple-50 p-8 rounded-xl">
+                <section className="m-6 my-8 flex justify-between  pt-4 border-black bg-purple-50 p-8 rounded-xl shadow-lg">
                   <section className="w-8/12">
                     <h1 className=" text-black text-xl font-semibold ">
                       {item?.info?.name} -- ₹{" "}
