@@ -1,8 +1,13 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RESTAURANT_IMAGE_CLOUDINARY } from "./constants/constants";
+import { clearCart } from "./constants/cartSlice";
 const Cart = () => {
   const cartItems = useSelector((store) => store?.cart?.items);
+  const dispatch = useDispatch();
   console.log(cartItems);
+  const handleClearCart = () => {
+    dispatch(clearCart());
+  };
   return (
     <>
       <section className="w-9/12 mx-auto">
@@ -12,7 +17,10 @@ const Cart = () => {
             : `No Items in the Cart !`}
         </section>
         <section className="text-center">
-          <button className="bg-purple-50 text-black font-bold p-2 rounded-xl hover:bg-black hover:text-purple-50 ">
+          <button
+            className="bg-purple-50 text-black font-bold p-2 rounded-xl hover:bg-black hover:text-purple-50"
+            onClick={handleClearCart}
+          >
             Clear Cart
           </button>
         </section>
