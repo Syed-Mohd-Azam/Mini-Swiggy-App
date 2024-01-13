@@ -30,14 +30,14 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="grocery"
                 className="text-2xl  hover:text-3xl hover:text-violet-500  italic text-black "
               >
                 Grocery
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="about"
@@ -46,14 +46,14 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="contact"
                 className="text-2xl text-black hover:text-3xl hover:text-violet-500 italic "
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
             <li className="flex gap-1 text-2xl text-black hover:text-3xl hover:text-violet-500 italic">
               <Link to="cart">
                 <img
@@ -63,7 +63,7 @@ const Header = () => {
               </Link>
               <span className="text-2xl font-bold">{length}</span>
             </li>
-            <li>
+            {/* <li>
               <button
                 className="text-2xl  hover:bg-blue-500 hover:text-3xl hover:text-white bg-zinc-50 text-black px-3  tracking-wide rounded-md pb-0.5"
                 onClick={() =>
@@ -72,7 +72,7 @@ const Header = () => {
               >
                 {button}
               </button>
-            </li>
+            </li> */}
             <li className="text-2xl text-black hover:text-3xl hover:text-violet-500 font-bold italic">
               {loggedInUser}
             </li>
