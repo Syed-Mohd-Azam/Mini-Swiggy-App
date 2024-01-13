@@ -14,12 +14,10 @@ class About extends React.Component {
     return (
       <>
         <main className="p-4">
-          <div className="p-4">
+          <div className="p-4 text-center font-semibold text-2xl italic tracking-wide ">
             LoggedInUser :
             <UserContext.Consumer>
-              {({ loggedInUser }) => (
-                <span className="font-bold "> {loggedInUser} </span>
-              )}
+              {({ loggedInUser }) => <span> {loggedInUser} </span>}
             </UserContext.Consumer>
           </div>
           <UserClass name="First (Class)" location="India " />
