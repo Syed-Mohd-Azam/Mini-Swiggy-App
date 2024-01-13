@@ -55,7 +55,7 @@ const RestaurantMenu = () => {
           (
             {
               card: {
-                card: { itemCards, title },
+                card: { itemCards, title, categories },
               },
             },
             index
@@ -65,6 +65,7 @@ const RestaurantMenu = () => {
               key={title}
               index={index}
               itemCards={itemCards}
+              categories={categories}
               title={title}
               setShowIndex={setShowIndex}
               showItems={index === showIndex && true}
