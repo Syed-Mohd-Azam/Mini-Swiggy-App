@@ -21,7 +21,7 @@ const Body = () => {
   }, []);
   useEffect(() => {
     setFilteredRestaurants(
-      listOfRestaurants.filter((restaurant) =>
+      listOfRestaurants?.filter((restaurant) =>
         restaurant?.info?.name.toLowerCase().includes(search.toLowerCase())
       )
     );
@@ -66,7 +66,7 @@ const Body = () => {
               className=" text-black rounded-md  cursor-pointer shadow- px-3 hover:scale-90 bg-purple-50 tracking-wide font-semibold"
               onClick={() => {
                 setFilteredRestaurants(
-                  listOfRestaurants.filter(
+                  listOfRestaurants?.filter(
                     (restaurant) => restaurant?.info?.avgRating > 4
                   )
                 );
