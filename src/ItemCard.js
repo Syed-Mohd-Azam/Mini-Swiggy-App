@@ -28,7 +28,7 @@ const ItemCard = (item) => {
           ) : (
             <>
               <button className="min-w-36 min-h-32 w-36 h-32 rounded-xl shadow-2xl hover:scale-90 hover:translate-x-6 cursor-pointer text-white font-bold text-xl bg-black">
-                Image not Avaailable
+                Image not Available
               </button>
             </>
           )}
