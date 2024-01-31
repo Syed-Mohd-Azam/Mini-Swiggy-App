@@ -45,6 +45,8 @@ Open your browser and visit http://localhost:1234 to see the app in action, beca
 Don't forget to add CORS extension to your browser as well as please toggle " ON " CORS extension from extension section. If you add the CORS extension but you do not Toggle ON the CORS extension then it does not worthy.
 
 🚀 So, please ADD the CORS extension and ON the CORS extension.
+![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/e942cf25-2f4f-460e-8a38-a3622565c09f)
+
 
 Project Link : https://marvelous-boba-04d9c8.netlify.app/
 
