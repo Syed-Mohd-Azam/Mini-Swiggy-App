@@ -11,3 +11,4 @@ export const RESTAURANT_IMAGE_CLOUDINARY =
 // All the constants defined and exported here  in this file and can be imported in a ny file where it needed.
 export const CORS_PROXY_URL = "https://corsproxy.io/?";
 export const GITHUB_API = "https://api.github.com/users/Syed-Mohd-Azam";
+export const corsProxyUrl = "https://cors-anywhere.herokuapp.com/";

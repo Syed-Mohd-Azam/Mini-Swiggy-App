@@ -2,13 +2,14 @@
 // import { CORS_PROXY_URL } from "../constants/constants";
 import { useEffect, useState } from "react";
 import { MENU_API } from "../constants/constants";
+import { corsProxyUrl } from "../constants/constants";
 const useMenu = (resId) => {
   const [resInfo, setResInfo] = useState(null);
   useEffect(() => {
     fetchMenu();
   }, []);
   const fetchMenu = async () => {
-    const response = await fetch(MENU_API + resId);
+    const response = await fetch(corsProxyUrl + MENU_API + resId);
     const jsonData = await response.json();
     // console.log(jsonData);
     setResInfo(jsonData);
