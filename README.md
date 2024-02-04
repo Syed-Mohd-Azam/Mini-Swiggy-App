@@ -51,6 +51,7 @@ Don't forget to add CORS extension to your browser as well as please toggle " ON
 ![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/e491e457-c0d2-4bca-9d5c-40c1ca12de1b)
 ![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/26ad2dc3-76b4-47fc-9f03-73249551dd2e)
 
+![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/f0f6412d-18de-4528-aa5d-e2c1a51194e9)
 
 
 Project Link : https://marvelous-boba-04d9c8.netlify.app/
