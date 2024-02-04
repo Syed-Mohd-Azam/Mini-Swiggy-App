@@ -46,7 +46,8 @@ Don't forget to add CORS extension to your browser as well as please toggle " ON
 
 🚀 So, please ADD the CORS extension and ON the CORS extension.
 
-![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/2ca7d3f1-4d15-4823-94ed-c5d5be21f2bd)
+![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/6a567d8c-bca0-4e55-8c22-eaf6fa404302)
+
 
 ![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/e942cf25-2f4f-460e-8a38-a3622565c09f)
 
