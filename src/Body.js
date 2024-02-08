@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { SWIGGY_API } from "./constants/constants";
 import useOnlineStatus from "./custom-hooks/useOnlineStatus";
 import UserContext from "./constants/UserContext";
+import { CORS_PROXY_URL } from "./constants/constants";
 const Body = () => {
   const { setUserName, loggedInUser } = useContext(UserContext);
   const onlineStatus = useOnlineStatus();
@@ -27,7 +28,7 @@ const Body = () => {
     );
   }, [search]);
   const fetchData = async () => {
-    const response = await fetch(SWIGGY_API);
+    const response = await fetch(CORS_PROXY_URL + SWIGGY_API);
     const json = await response.json();
     setListOfRestaurants(
       json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
