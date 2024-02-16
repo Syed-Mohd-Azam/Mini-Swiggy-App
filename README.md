@@ -1,4 +1,4 @@
-# SnackSwift -- Mini Swiggy Application 🚀
+# 🚀SnackSwift -- Mini Swiggy Application 🧡!
 
 Welcome to the Mini Swiggy App React project! This application is a simplified version of the popular food delivery platform, Swiggy, built using React. Whether you're a beginner looking to explore React or an experienced developer looking for a fun project, this mini Swiggy app provides a great opportunity to enhance your skills in building dynamic and interactive web applications.
 
