@@ -1,4 +1,4 @@
-# Mini Swiggy App - React Project
+# 🚀SnackSwift -- Mini Swiggy Application 🧡!
 
 Welcome to the Mini Swiggy App React project! This application is a simplified version of the popular food delivery platform, Swiggy, built using React. Whether you're a beginner looking to explore React or an experienced developer looking for a fun project, this mini Swiggy app provides a great opportunity to enhance your skills in building dynamic and interactive web applications.
 
@@ -55,6 +55,6 @@ Don't forget to add CORS extension to your browser as well as please toggle " ON
 
 ![image](https://github.com/Syed-Mohd-Azam/Mini-Swiggy-App/assets/112909412/731cc2a7-e5c7-4f64-b84b-f676213eb041)
 
-Project Link : https://marvelous-boba-04d9c8.netlify.app/
+🎉Project Link : https://marvelous-boba-04d9c8.netlify.app/
 
 ## Hope you enjoyed and Happy Coding!! 🚀🚀
