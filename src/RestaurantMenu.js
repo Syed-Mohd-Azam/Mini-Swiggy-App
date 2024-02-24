@@ -5,6 +5,7 @@ import { useState } from "react";
 const RestaurantMenu = () => {
   const { resid } = useParams();
   const resInfo = useMenu(resid);
+  console.log(resInfo);
   const [showIndex, setShowIndex] = useState(null);
   // console.log(resInfo);
   if (resInfo === null) {
@@ -22,9 +23,9 @@ const RestaurantMenu = () => {
     costForTwoMessage,
     locality,
     totalRatingsString,
-  } = resInfo?.data?.cards?.[0]?.card?.card?.info;
+  } = resInfo?.data?.cards?.[2]?.card?.card?.info;
   const categories =
-    resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    resInfo?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (category) => category?.card?.card?.["@type"].includes("ItemCategory")
     );
   console.log(categories);
