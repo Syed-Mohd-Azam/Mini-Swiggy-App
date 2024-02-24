@@ -25,7 +25,7 @@ const RestaurantMenu = () => {
     totalRatingsString,
   } = resInfo?.data?.cards?.[2]?.card?.card?.info;
   const categories =
-    resInfo?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (category) => category?.card?.card?.["@type"].includes("ItemCategory")
     );
   console.log(categories);
