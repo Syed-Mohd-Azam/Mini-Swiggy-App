@@ -9,7 +9,7 @@ Welcome to the Mini Swiggy App React project! This application is a simplified v
 - JSX and Babel.
 - React Fragment
 - What is Functional Component and how to write it?
--- Controlled vs Uncontrolled Component
+- Controlled vs Uncontrolled Component
 -- React Hooks and Custom Hooks.
 -- what are Higher Order Components?
 -- Live Swiggy API to fetch and display the data of Restaurants.
