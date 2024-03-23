@@ -35,10 +35,10 @@ Steps :-
 
 ## Getting Started
 
-Clone the repository to your local machine.
-Navigate to the project directory and install dependencies using npm install by writing the command "npm install".
-Start the development server with npm start.
-Open your browser and visit http://localhost:1234 to see the app in action, because parcel as a bundler used in this project.
+- Clone the repository to your local machine.
+- Navigate to the project directory and install dependencies using npm install by writing the command "npm install".
+- Start the development server with npm start.
+- Open your browser and visit http://localhost:1234 to see the app in action, because parcel as a bundler used in this project.
 
 ## Project Link (Below)
 
