@@ -28,10 +28,10 @@ Basic understanding of React and JavaScript
 
 ## Most Important thing to remember (Please!!) 🚀
 
-Steps:-
+Steps :-
 
--- Go to Google Chrome or any browser where you want to run the application, please add CORS Extension to that browser where you want to run the application, other wise you will not able to run the application and browser will show the CORS error to you. 
--- Once you add the CORS extension, then next step is that you will go to the extensions section of the browser and will click on CORS extension and there will be option "Toggle on/off ". Please click "ON" so that it will be ON and colored. Then refresh the browser and you will be able to run and enjoy the application.
+- Go to Google Chrome or any browser where you want to run the application, please add CORS Extension to that browser where you want to run the application, other wise you will not able to run the application and browser will show the CORS error to you. 
+- Once you add the CORS extension, then next step is that you will go to the extensions section of the browser and will click on CORS extension and there will be option "Toggle on/off ". Please click "ON" so that it will be ON and colored. Then refresh the browser and you will be able to run and enjoy the application.
 
 ## Getting Started
 
