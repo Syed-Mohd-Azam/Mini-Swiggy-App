@@ -8,7 +8,7 @@ Welcome to the Mini Swiggy App React project! This application is a simplified v
 - What is React.createElement()?
 - JSX and Babel.
 - React Fragment
--- What is Functional Component and how to write it?
+- What is Functional Component and how to write it?
 -- Controlled vs Uncontrolled Component
 -- React Hooks and Custom Hooks.
 -- what are Higher Order Components?
