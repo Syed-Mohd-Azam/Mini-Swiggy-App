@@ -57,4 +57,4 @@ Don't forget to add CORS extension to your browser as well as please toggle " ON
 
 🎉Project Link : https://marvelous-boba-04d9c8.netlify.app/
 
-## Hope you enjoyed and Happy Coding!! 🚀🚀
+## Hope you enjoyed and Happy Coding 🚀🚀
