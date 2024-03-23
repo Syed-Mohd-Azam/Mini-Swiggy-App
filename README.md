@@ -17,7 +17,7 @@ Welcome to the Mini Swiggy App React project! This application is a simplified v
 - React Error Boundary with the help of useRouteError().
 - Optimisation by using Lazy Loading.
 - Tailwind CSS for building UI.
--- Context API for providing the same data globally.
+- Context API for providing the same data globally.
 -- State Management by Redux Toolkit
 
 ## Prerequisites
