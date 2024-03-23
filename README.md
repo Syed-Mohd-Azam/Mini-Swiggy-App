@@ -7,7 +7,7 @@ Welcome to the Mini Swiggy App React project! This application is a simplified v
 - What is React? Why we use it?
 - What is React.createElement()?
 - JSX and Babel.
--- React Fragment
+- React Fragment
 -- What is Functional Component and how to write it?
 -- Controlled vs Uncontrolled Component
 -- React Hooks and Custom Hooks.
