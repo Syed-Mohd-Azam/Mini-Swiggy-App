@@ -15,7 +15,7 @@ Welcome to the Mini Swiggy App React project! This application is a simplified v
 - Live Swiggy API to fetch and display the data of Restaurants.
 - React Router v6 used to navigation and routing.
 - React Error Boundary with the help of useRouteError().
--- Optimisation by using Lazy Loading.
+- Optimisation by using Lazy Loading.
 -- Tailwind CSS for building UI.
 -- Context API for providing the same data globally.
 -- State Management by Redux Toolkit
