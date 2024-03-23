@@ -11,7 +11,7 @@ Welcome to the Mini Swiggy App React project! This application is a simplified v
 - What is Functional Component and how to write it?
 - Controlled vs Uncontrolled Component
 - React Hooks and Custom Hooks.
--- what are Higher Order Components?
+- what are Higher Order Components?
 -- Live Swiggy API to fetch and display the data of Restaurants.
 -- React Router v6 used to navigation and routing.
 -- React Error Boundary with the help of useRouteError().
